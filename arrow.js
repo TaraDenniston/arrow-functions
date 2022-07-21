@@ -8,8 +8,7 @@
 // }
 
 // ES2015 Version
-
-
+const double = (arr) => arr.map((val) => val * 2);
 
 
 // Refactor the following function to use arrow functions:
@@ -26,4 +25,12 @@
 // }
 
 // ES2015 Version
+const squareAndFindEvens = (numbers) => {
+  const squares = numbers.map((num) => num ** 2);
+  const evens = squares.filter((square) => square % 2 === 0);
+  return evens;
+};
+
+
+
 
